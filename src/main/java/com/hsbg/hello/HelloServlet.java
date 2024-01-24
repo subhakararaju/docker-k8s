@@ -34,7 +34,8 @@ public class HelloServlet extends HttpServlet {
 			yourName = "Vilas";
 		}
 		PrintWriter writer = response.getWriter();
-		writer.println("<h1>Hello " + yourName + "</h1>");
+		writer.println("<h1 style="background-color:DodgerBlue;">Hello " + yourName + "</h1>");
+			writer.println("<h3 >This is your first CICD example</h1>");
 		writer.close();
 	}
 
