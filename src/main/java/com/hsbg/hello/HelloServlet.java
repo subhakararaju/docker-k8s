@@ -30,11 +30,14 @@ public class HelloServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		String yourName = request.getParameter("username");
+		String password = request.getParameter("password");
 		if(yourName ==null){
 			yourName = "Vilas";
 		}
 		PrintWriter writer = response.getWriter();
-		writer.println("<h1 color=blue>Hello " + yourName + "</h1>");
+		writer.println("<h1>Login Successful</h1>");
+		writer.println("<h1>Hello " + yourName + "</h1>");
+		writer.println("Login Successful");
 		writer.println("<h3>This is your first CICD example</h3>");
 		writer.close();
 	}
